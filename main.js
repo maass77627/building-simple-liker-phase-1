@@ -1,10 +1,9 @@
-// Defining text characters for the empty and full hearts for you to use later.
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
+
 let heartIcons = document.querySelectorAll(".like-glyph")
-// console.log(heartIcons)
+
 
 heartIcons.forEach(item => {
   item.addEventListener('click', onClick)
@@ -35,9 +34,7 @@ function onClick(e) {
 
 
 
-//------------------------------------------------------------------------------
-// Don't change the code below: this function mocks the server response
-//------------------------------------------------------------------------------
+
 
 function mimicServerCall(url="http://mimicServer.example.com", config={}) {
   return new Promise(function(resolve, reject) {
